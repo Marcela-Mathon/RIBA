@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>RIBA | Indumentaria deportiva</title>
 
 </head>
@@ -36,15 +38,15 @@
     <section class="section1">
         <h2>¿Qué ofrecemos?</h2>
         <article class="contenedor-grid">
-            <div class="contenedor-grid-items">
+            <div class="contenedor-grid-items" data-aos="zoom-out-right" data-aos-duration="2000">
                 <img src="multimedia/logos/icono-equipo.png" alt="icono equipo ciclista">
                 <h3>Ciclismo</h3>
             </div>
-            <div class="contenedor-grid-items">
+            <div class="contenedor-grid-items" data-aos="zoom-in-down" data-aos-duration="2000">
                 <img src="multimedia/logos/icono-camiseta.png" alt="icono camiseta futbol">
                 <h3>Fútbol</h3>
             </div>
-            <div class="contenedor-grid-items">
+            <div class="contenedor-grid-items" data-aos="zoom-out-left" data-aos-duration="2000">
                 <img src="multimedia/logos/icono-guantes.png" alt="icono guantes ciclismo">
                 <h3>Accesorios</h3>
             </div> 
@@ -83,5 +85,10 @@
             <a href="mailto:sportswearriba@gmail.com"><img src="multimedia/logos/mail.svg" alt="icono correo electronico"></a>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
