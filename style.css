@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* tipografias */
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap');
+/* familia tipográfica: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap');
+/* familia tipográfica: 'IBM Plex Serif', serif; */
+
+/* HEADER */
+.cabecera{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 105px;
+    position: sticky;
+    top: 0;
+    z-index: 10
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    width: 100%;
+}
+
+.logoprincipal{
+    display: flex;
+    width: 80px;
+    padding: 15px 80px
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.menu ul li{
+    list-style-type: none;
+
+}
+.menu ul li a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/* INICIO */
+.hero{
+    background-image: url(multimedia/images/portada-ciclistas.jpg);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.textoimagen{
+    width: 50%;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 23px;
+    margin: 25px 0 120px 0;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 h2, .section2 h2{
+    margin-bottom: 20px;
+    padding: 50px 0 25px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+.contenedor-grid{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 70%;
+}
+
+.contenedor-grid-items{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-grid-items img{
+    width: 65%;
+    padding-top: 30px;
+}
+
+.contenedor-grid-items h3{
+    display: flex;
+    align-items: flex-end;
+    margin: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 400
+}
+
+
+/* Aca iría el carrousel, solo ajuste imagenes al ancho de pantalla */
+
+.section2 img{
+    width: 100%;
+}
+ 
+.nosotros, .personalizados{
+    display: flex;
+    width: 100%;
+}
+.imagennosotros, .imagenpersonalizados{
+    width: 30%;
+    margin: 90px 50px 90px 120px;
+    object-fit: cover;
+}
+
+.nosotros div h1, .personalizados h1{
+    margin: 100px 0 10px 60px;
+    font-family:'Roboto', sans-serif;
+    font-size: 40px;
+
+}
+.nosotros div p, .personalizados div p{ 
+    margin: 30px 60px;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: justify;
+    width: 50%;
+}
+
+/* CATALOGO */
+
+.catalogo h1, .contacto h1 {
+    margin: auto;
+    padding: 35px 0 15px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.catalogo p, .contacto p{
+    margin: auto;
+    width: 45%;
+    padding-bottom: 50px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.maincatalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-catalogo{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 70px;
+    grid-column-gap: 25px;
+    width: 85%;
+}
+
+.grid-catalogo-items img{
+    width: 90%;
+
+}
+
+.grid-catalogo-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Roboto', sans-serif;
+}
+.grid-catalogo-items h3{
+    font-size: 20px;
+    margin: 12px 0 4px 0;
+}
+
+.botonvolverarriba{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 35px 0;
+}
+.botonvolverarriba a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+.footer-grid{
+    display: grid;
+    grid-template-rows: 105px;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    background-color: black;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-grid div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redes a img{
+    width: 35px;
+    padding: 0 12px;
+}
+
+.logoalternativo{
+    width: 98px;
+}
+
+.ubicacion p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
