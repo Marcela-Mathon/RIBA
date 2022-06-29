@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    
     <title>RIBA | Indumentaria deportiva</title>
-
 </head>
+
 <body>
     <!-- menu principal -->
-    <header class="cabecera"> 
+    
+    <header class="cabecera">
        <a href="index.html">
             <img class="logoprincipal" src="multimedia/logos/logo-riba.svg" alt="logo riba sportswear">
        </a>
@@ -38,15 +39,15 @@
     <section class="section1">
         <h2>¿Qué ofrecemos?</h2>
         <article class="contenedor-grid">
-            <div class="contenedor-grid-items" data-aos="zoom-out-right" data-aos-duration="2000">
+            <div class="contenedor-grid-items">
                 <img src="multimedia/logos/icono-equipo.png" alt="icono equipo ciclista">
                 <h3>Ciclismo</h3>
             </div>
-            <div class="contenedor-grid-items" data-aos="zoom-in-down" data-aos-duration="2000">
+            <div class="contenedor-grid-items">
                 <img src="multimedia/logos/icono-camiseta.png" alt="icono camiseta futbol">
                 <h3>Fútbol</h3>
             </div>
-            <div class="contenedor-grid-items" data-aos="zoom-out-left" data-aos-duration="2000">
+            <div class="contenedor-grid-items">
                 <img src="multimedia/logos/icono-guantes.png" alt="icono guantes ciclismo">
                 <h3>Accesorios</h3>
             </div> 
@@ -55,40 +56,72 @@
     
     <section class="section2">  
         <h2>Equipos vestidos por RIBA</h2>
-
-        <!-- Carousel de imagenes -->
-        <img src="multimedia/images/seleccion-pista-dama.jpg" alt="ciclista federacion uruguaya ciclismo pista">
-        <img src="multimedia/images/seleccion-uruguaya.jpg" alt="seleccion uruguaya de ciclismo masculina">
-        <img src="multimedia/images/seleccion-uruguaya-damas.jpg" alt="seleccion uruguaya de ciclismo femenina">
-        <img src="multimedia/images/alas-rojas.jpg" alt="club ciclista alas rojas santa lucia">
-        <img src="multimedia/images/la-costa-ciclismo.jpg" alt="la costa sports club ciclismo">
-        <img src="multimedia/images/ciudad-del-plata.jpg" alt="ciclistas ciudad del plata">
-        <img src="multimedia/images/ciudad-del-plata-equipodamas.jpg" alt="ciclistas ciudad del plata damas">
-        <img src="multimedia/images/club-ciclista-fenix.jpg" alt="club ciclista fenix montevideo">
-        <img src="multimedia/images/33-vergara-ciclismo.jpg" alt="ciclistas 33 vergara">
-        <img src="multimedia/images/cruz-del-sur-ciclismo.jpg" alt="ciclistas cruz del sur">
-        <img src="multimedia/images/maldonado.jpg" alt="club ciclista maldonado">
+        <!-- Carousel -->
+        <div id="carouselExampleInterval" class="carousel slide container mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="multimedia/images/seleccion-pista-dama.jpg" class="d-block w-100" alt="ciclista federacion uruguaya ciclismo pista">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="multimedia/images/seleccion-uruguaya.jpg" class="d-block w-100" alt="seleccion uruguaya de ciclismo masculina">
+              </div>
+              <div class="carousel-item">
+                <img src="multimedia/images/seleccion-uruguaya-damas.jpg" class="d-block w-100" alt="seleccion uruguaya de ciclismo femenina">
+              </div>
+              <div class="carousel-item">
+                <img src="multimedia/images/alas-rojas.jpg" class="d-block w-100" alt="club ciclista alas rojas santa lucia">
+              </div>
+              <div class="carousel-item">
+                <img src="multimedia/images/la-costa-ciclismo.jpg" class="d-block w-100" alt="la costa sports club ciclismo">
+              </div>
+              <div class="carousel-item">
+                <img src="multimedia/images/ciudad-del-plata.jpg" class="d-block w-100" alt="ciclistas ciudad del plata">
+              </div>
+              <div class="carousel-item">
+                <img src="multimedia/images/ciudad-del-plata-equipodamas.jpg" class="d-block w-100" alt="ciclistas ciudad del plata damas">
+              </div>
+              <div class="carousel-item">
+                <img src="multimedia/images/club-ciclista-fenix.jpg" class="d-block w-100" alt="club ciclista fenix montevideo">
+              </div>
+              <div class="carousel-item">
+                <img src="multimedia/images/33-vergara-ciclismo.jpg" class="d-block w-100" alt="ciclistas 33 vergara">
+              </div>
+              <div class="carousel-item">
+                <img src="multimedia/images/cruz-del-sur-ciclismo.jpg" class="d-block w-100" alt="ciclistas cruz del sur">
+              </div>
+              <div class="carousel-item">
+                <img src="multimedia/images/maldonado.jpg" class="d-block w-100" alt="club ciclista maldonado">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
     
     <!-- footer -->
-    <footer class="footer-grid">
-        <div class="ubicacion">
-            <p>Santa Lucía, Canelones. URUGUAY</p>
-        </div>
-        <div>
-            <img class="logoalternativo" src="multimedia/logos/riba-alternativo.svg" alt="logo riba alternativo">
-        </div>
-        <!-- iconos redes -->
-        <div class="redes">
-            <a href="https://wa.link/avj9ml" target="_blank"><img src="multimedia/logos/whatsapp.svg" alt="icono whatsapp"></a>
-            <a href="https://www.instagram.com/riba_sportswear" target="_blank"><img src="multimedia/logos/instagram.svg" alt="icono instagram"></a>
-            <a href="mailto:sportswearriba@gmail.com"><img src="multimedia/logos/mail.svg" alt="icono correo electronico"></a>
+    <footer class="footer-grid pt-4 pb-4">
+        <div class="row">
+            <div class="col ubicacion">
+                <p>Santa Lucía, Canelones. URUGUAY</p>
+            </div>
+            <div class="col">
+                <img class="logoalternativo" src="multimedia/logos/riba-alternativo.svg" alt="logo riba alternativo">
+            </div>
+            <!-- iconos redes -->
+            <div class="col redes">
+                <a href="https://wa.link/avj9ml" target="_blank"><img src="multimedia/logos/whatsapp.svg" alt="icono whatsapp"></a>
+                <a href="https://www.instagram.com/riba_sportswear" target="_blank"><img src="multimedia/logos/instagram.svg" alt="icono instagram"></a>
+                <a href="mailto:sportswearriba@gmail.com"><img src="multimedia/logos/mail.svg" alt="icono correo electronico"></a>
+            </div>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
