@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- AOS animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <title>RIBA | Indumentaria deportiva</title>
 </head>
@@ -15,19 +18,36 @@
 <body>
     <!-- menu principal -->
     
-    <header class="cabecera">
-       <a href="index.html">
-            <img class="logoprincipal" src="multimedia/logos/logo-riba.svg" alt="logo riba sportswear">
-       </a>
-       <nav class="menu">
-            <ul>
-               <li><a href="index.html">Inicio</a></li>
-               <li><a href="pages/nosotros.html">Nosotros</a></li>
-               <li><a href="pages/catalogo.html">Catálogo</a></li>
-               <li><a href="pages/personalizados.html">Personalizados</a></li>
-               <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-       </nav>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark cabecera">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="index.html">
+                    <img class="logoprincipal" src="multimedia/logos/logo-riba.svg" alt="logo riba sportswear" width="80">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse menu" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/catalogo.html">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/personalizados.html">Personalizados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <!-- imagen portada -->
@@ -39,15 +59,15 @@
     <section class="section1">
         <h2>¿Qué ofrecemos?</h2>
         <article class="contenedor-grid">
-            <div class="contenedor-grid-items">
+            <div class="contenedor-grid-items" data-aos="zoom-out-right" data-aos-duration="2000">
                 <img src="multimedia/logos/icono-equipo.png" alt="icono equipo ciclista">
                 <h3>Ciclismo</h3>
             </div>
-            <div class="contenedor-grid-items">
+            <div class="contenedor-grid-items" data-aos="zoom-in-down" data-aos-duration="2000">
                 <img src="multimedia/logos/icono-camiseta.png" alt="icono camiseta futbol">
                 <h3>Fútbol</h3>
             </div>
-            <div class="contenedor-grid-items">
+            <div class="contenedor-grid-items" data-aos="zoom-out-left" data-aos-duration="2000">
                 <img src="multimedia/logos/icono-guantes.png" alt="icono guantes ciclismo">
                 <h3>Accesorios</h3>
             </div> 
@@ -105,22 +125,27 @@
     </section>
     
     <!-- footer -->
-    <footer class="footer-grid pt-4 pb-4">
+    <footer class="footer-grid pt-4 pb-4 ">
         <div class="row">
-            <div class="col ubicacion">
-                <p>Santa Lucía, Canelones. URUGUAY</p>
+            <div class="col d-flex justify-content-start ms-5">
+                <p class="ubicacion mb-0 ">Santa Lucía, Canelones. URUGUAY</p>
             </div>
             <div class="col">
                 <img class="logoalternativo" src="multimedia/logos/riba-alternativo.svg" alt="logo riba alternativo">
             </div>
             <!-- iconos redes -->
-            <div class="col redes">
-                <a href="https://wa.link/avj9ml" target="_blank"><img src="multimedia/logos/whatsapp.svg" alt="icono whatsapp"></a>
-                <a href="https://www.instagram.com/riba_sportswear" target="_blank"><img src="multimedia/logos/instagram.svg" alt="icono instagram"></a>
-                <a href="mailto:sportswearriba@gmail.com"><img src="multimedia/logos/mail.svg" alt="icono correo electronico"></a>
+            <div class="col d-flex justify-content-end flex-wrap redes">
+                <a href="https://wa.link/avj9ml" target="_blank"><img class="mx-2" src="multimedia/logos/whatsapp.svg" alt="icono whatsapp" width="35"></a>
+                <a href="https://www.instagram.com/riba_sportswear" target="_blank"><img class="mx-2" src="multimedia/logos/instagram.svg" alt="icono instagram" width="35"></a>
+                <a href="mailto:sportswearriba@gmail.com"><img class="mx-2" src="multimedia/logos/mail.svg" alt="icono correo electronico" width="35"></a>
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
