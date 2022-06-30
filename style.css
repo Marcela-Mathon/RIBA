@@ -7,9 +7,6 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap');
 /* familia tipográfica: 'Roboto', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap');
-/* familia tipográfica: 'IBM Plex Serif', serif; */
-
 /* HEADER */
 .cabecera{
     display: flex;
@@ -19,7 +16,7 @@
     height: 105px;
     position: sticky;
     top: 0;
-    z-index: 10
+    z-index: 10 
 }
 
 .menu{
@@ -32,7 +29,7 @@
 .logoprincipal{
     display: flex;
     width: 80px;
-    padding: 15px 80px
+    padding: 15px 80px;
 }
 
 .logoprincipal:hover{
@@ -112,14 +109,16 @@
     flex-direction: column;
     align-items: center;
 }
+
 .section1 h2, .section2 h2{
     margin-bottom: 20px;
     padding: 50px 0 25px;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto', sans-serif;
     font-size: 35px;
     text-align: center;
 }
+
 .contenedor-grid{
     display: grid;
     grid-template-rows: auto;
@@ -149,7 +148,6 @@
     font-size: 23px;
     font-weight: 400
 }
-
 
 /* Aca iría el carrousel, solo ajuste imagenes al ancho de pantalla */
 
@@ -264,12 +262,12 @@
 /* FOOTER */
 
 .footer-grid{
-    display: grid;
+  /*   display: grid;
     grid-template-rows: 105px;
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr; */
     background-color: black;
     align-items: center;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
 .footer-grid div{
