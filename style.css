@@ -9,14 +9,9 @@
 
 /* HEADER */
 .cabecera{
-    display: flex;
-    align-items: center;
     background-color: black;
     width: 100%;
     height: 105px;
-    position: sticky;
-    top: 0;
-    z-index: 10 
 }
 
 .menu{
@@ -24,12 +19,6 @@
     justify-content: flex-end;
     margin-right: 5%;
     width: 100%;
-}
-
-.logoprincipal{
-    display: flex;
-    width: 80px;
-    padding: 15px 80px;
 }
 
 .logoprincipal:hover{
@@ -100,6 +89,23 @@
 }
 
 .boton:hover{
+    transform: scale(1.03);
+    color:#5dc1b9
+}
+
+.boton-contacto{
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+    margin: 25px 0 120px 0;
+    transition: 0.3s
+}
+
+.boton-contacto:hover{
     transform: scale(1.03);
     color:#5dc1b9
 }
@@ -262,12 +268,7 @@
 /* FOOTER */
 
 .footer-grid{
-  /*   display: grid;
-    grid-template-rows: 105px;
-    grid-template-columns: 1fr 1.5fr 1fr; */
     background-color: black;
-    align-items: center;
-    /* gap: 15px; */
 }
 
 .footer-grid div{
@@ -277,26 +278,16 @@
     justify-content: center;
 }
 
-.redes{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.redes a img{
-    width: 35px;
-    padding: 0 12px;
-    transition: 0.3s;
-}
-
 .redes a img:hover{
     transform: scale(1.13);
-}
+    transition: 0.3s;
+} 
 
 .logoalternativo{
     width: 98px;
 }
 
-.ubicacion p{
+.ubicacion{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 300;
