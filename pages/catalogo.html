@@ -17,7 +17,7 @@
 <body>
       <!-- menu principal -->
       <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark cabecera">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="../index.html">
                     <img class="logoprincipal" src="../multimedia/logos/logo-riba.svg" alt="logo riba sportswear" width="80">
@@ -48,7 +48,7 @@
           </nav>
     </header>
 
-     <main class="maincatalogo">   
+     <main class="maincatalogo">
         <section class="catalogo">
             <h1 id="volverarriba">Nuestros productos</h1>
             <p>Cada prenda puede ser personalizada con color y diseño que desees.
@@ -57,52 +57,58 @@
         </section>
 
         <!-- fotos catalogo -->
-
-        <section class="grid-catalogo">
-            <div class="grid-catalogo-items">
-                <img src="../multimedia/catalogo/maillot-azul.png" alt="maillot jersey ciclista azul">
-                <h3>Maillot</h3>
-                <p>$1790</p>
+        
+        <section class="container grid-catalogo">
+            <div class="row mb-5">
+                <div class="col-lg-4 col-sm-12 grid-catalogo-items">
+                    <img src="../multimedia/catalogo/maillot-azul.png" alt="maillot jersey ciclista azul">
+                    <h3>Maillot</h3>
+                    <p>$1790</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 grid-catalogo-items">
+                    <img src="../multimedia/catalogo/maillot-gris.png" alt="maillot jersey ciclista gris y amarillo">
+                    <h3>Maillot</h3>
+                    <p>$1790</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 grid-catalogo-items">
+                    <img src="../multimedia/catalogo/maillot-celeste.png" alt="maillot jersey ciclista celeste y rosado">
+                    <h3>Maillot</h3>
+                    <p>$1790</p>
+                </div>
             </div>
-            <div class="grid-catalogo-items">
-                <img src="../multimedia/catalogo/maillot-gris.png" alt="maillot jersey ciclista gris y amarillo">
-                <h3>Maillot</h3>
-                <p>$1790</p>
+            <div class="row mb-5">
+                <div class="col-lg-4 col-sm-12 grid-catalogo-items">
+                    <img src="../multimedia/catalogo/chalecos.png" alt="chaleco cortaviento ciclismo">
+                    <h3>Chaleco cortaviento</h3>
+                    <p>$1990</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 grid-catalogo-items">
+                    <img src="../multimedia/catalogo/calza-corta.png" alt="calza corta ciclismo">
+                    <h3>Calza corta</h3>
+                    <p>$2590</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 grid-catalogo-items">
+                    <img src="../multimedia/catalogo/calzas-largas.png" alt="calza larga ciclismo">
+                    <h3>Calza larga</h3>
+                    <p>$2690</p>
+                </div>
             </div>
-            <div class="grid-catalogo-items">
-                <img src="../multimedia/catalogo/maillot-celeste.png" alt="maillot jersey ciclista celeste y rosado">
-                <h3>Maillot</h3>
-                <p>$1790</p>
-            </div>
-            <div class="grid-catalogo-items">
-                <img src="../multimedia/catalogo/chalecos.png" alt="chaleco cortaviento ciclismo">
-                <h3>Chaleco cortaviento</h3>
-                <p>$1990</p>
-            </div>
-            <div class="grid-catalogo-items">
-                <img src="../multimedia/catalogo/calza-corta.png" alt="calza corta ciclismo">
-                <h3>Calza corta</h3>
-                <p>$2590</p>
-            </div>
-            <div class="grid-catalogo-items">
-                <img src="../multimedia/catalogo/calzas-largas.png" alt="calza larga ciclismo">
-                <h3>Calza larga</h3>
-                <p>$2690</p>
-            </div>
-            <div class="grid-catalogo-items">
-                <img src="../multimedia/catalogo/camperafina.png" alt="campera neopreno ciclismo">
-                <h3>Campera neopreno</h3>
-                <p>$2390</p>
-            </div>
-            <div class="grid-catalogo-items">
-                <img src="../multimedia/catalogo/neopreno-verde.png" alt="campera neopreno termica impermeable verde">
-                <h3>Campera térmica impermeable</h3>
-                <p>$2790</p>
-            </div>
-            <div class="grid-catalogo-items">           
-                <img src="../multimedia/catalogo/nepreno-dama.png" alt="campera  neopreno termica impermeable rosada">
-                <h3>Campera térmica impermeable</h3>
-                <p>$2790</p>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 grid-catalogo-items">
+                    <img src="../multimedia/catalogo/camperafina.png" alt="campera neopreno ciclismo">
+                    <h3>Campera neopreno</h3>
+                    <p>$2390</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 grid-catalogo-items">
+                    <img src="../multimedia/catalogo/neopreno-verde.png" alt="campera neopreno termica impermeable verde">
+                    <h3>Campera térmica impermeable</h3>
+                    <p>$2790</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 grid-catalogo-items">           
+                    <img src="../multimedia/catalogo/nepreno-dama.png" alt="campera  neopreno termica impermeable rosada">
+                    <h3>Campera térmica impermeable</h3>
+                    <p>$2790</p>
+                </div>
             </div>
         </section>
         <section class="botonvolverarriba">
@@ -132,7 +138,9 @@
     <script>
         AOS.init();
     </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    
 </body>
 </html>

@@ -7,6 +7,9 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap');
 /* familia tipográfica: 'Roboto', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+/* familia tipográfica: 'Barlow', sans-serif; */
+
 /* HEADER */
 .cabecera{
     background-color: black;
@@ -17,20 +20,30 @@
 .menu{
     display: flex;
     justify-content: flex-end;
-    margin-right: 5%;
+    margin-right: 2%;
     width: 100%;
+}
+
+@media only screen and (max-width: 991px){
+    .menu{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
 }
 
 .logoprincipal:hover{
     transform: scale(1.02);
     transition: 0.3s;
 }
+
 .menu ul{
     display: flex;
     flex-wrap: wrap;
     font-size: 22px;
     font-family:'Roboto', sans-serif;
     font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .menu ul li{
@@ -50,7 +63,7 @@
 }
 
 .menu ul li a:hover{
-    color: #5dc1b9
+    color: #5dc1b9;
 }
 
 
@@ -155,10 +168,8 @@
     font-weight: 400
 }
 
-/* Aca iría el carrousel, solo ajuste imagenes al ancho de pantalla */
-
 .section2 img{
-    width: 100%;
+    object-fit: cover;
 }
  
 .nosotros, .personalizados{
@@ -197,7 +208,7 @@
     font-size: 40px;
     text-align: center;
 }
-.catalogo p, .contacto p{
+.catalogo p, .contacto p, .section2 p{
     margin: auto;
     width: 45%;
     padding-bottom: 50px;
@@ -214,14 +225,14 @@
     align-items: center;
 }
 
-.grid-catalogo{
+/* .grid-catalogo{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 70px;
     grid-column-gap: 25px;
     width: 85%;
-}
+} */
 
 .grid-catalogo-items img{
     width: 90%;
@@ -239,6 +250,7 @@
     align-items: center;
     font-family:'Roboto', sans-serif;
 }
+
 .grid-catalogo-items h3{
     font-size: 20px;
     margin: 12px 0 4px 0;
