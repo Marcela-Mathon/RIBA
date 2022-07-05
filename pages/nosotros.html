@@ -16,12 +16,12 @@
 <body>
     <!-- menu principal -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+        <nav class="navbar navbar-expand-lg navbar-dark py-2 cabecera">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="../index.html">
                     <img class="logoprincipal" src="../multimedia/logos/logo-riba.svg" alt="logo riba sportswear" width="80">
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse menu" id="navbarNav">
@@ -47,34 +47,38 @@
           </nav>
     </header>
 
-     <section class="nosotros">
-        <img class="imagennosotros" src="../multimedia/images/riba-bicicleta.png" alt="bicicleta ruta calza riba">
-        <div>
-            <h1>Nosotros</h1>
-            <p>
-            Somos una empresa Uruguaya, ubicada en la ciudad de Santa Lucía, que se dedica al diseño y confección de ropa deportiva.
-            Nuestras prendas son creadas específicamente para la práctica de deporte, tanto por los materiales y tecnologías empleadas como por el diseño, proporcionando al deportista comodidad, seguridad y un mayor rendimiento.
-            </p>
-         </div>
+     <section class="container nosotros">
+        <div class="row my-5 fila-nosotros">
+          <div class="col-lg-5 col-sm-12">
+              <img class="imagennosotros" src="../multimedia/images/riba-bicicleta.jpg" alt="bicicleta ruta calza riba">
+          </div>
+          <div class="col-lg-7 col-sm-12">
+              <h1>Nosotros</h1>
+              <p>
+              Somos una empresa Uruguaya, ubicada en la ciudad de Santa Lucía, que se dedica al diseño y confección de ropa deportiva.
+              Nuestras prendas son creadas específicamente para la práctica de deporte, tanto por los materiales y tecnologías empleadas como por el diseño, proporcionando al deportista comodidad, seguridad y un mayor rendimiento.
+              </p>
+          </div>
+        </div>
      </section>
 
      <!-- footer -->
-     <footer class="footer-grid pt-4 pb-4">
-        <div class="row">
-            <div class="col d-flex justify-content-start ms-5">
-                <p class="ubicacion mb-0">Santa Lucía, Canelones. URUGUAY</p>
-            </div>
-            <div class="col">
-                <img class="logoalternativo" src="../multimedia/logos/riba-alternativo.svg" alt="logo riba alternativo">
-            </div>
-            <!-- iconos redes -->
-            <div class="col d-flex justify-content-end flex-wrap redes">
-                <a href="https://wa.link/avj9ml" target="_blank"><img class="mx-2" src="../multimedia/logos/whatsapp.svg" alt="icono whatsapp" width="35"></a>
-                <a href="https://www.instagram.com/riba_sportswear" target="_blank"><img class="mx-2" src="../multimedia/logos/instagram.svg" alt="icono instagram" width="35"></a>
-                <a href="mailto:sportswearriba@gmail.com"><img class="mx-2" src="../multimedia/logos/mail.svg" alt="icono correo electronico" width="35"></a>
-            </div>
-        </div>
-    </footer>
+     <footer class="footer-container">
+      <div class="row footer-grid py-4 mx-0">
+          <div class="ubicacion col-lg-4 col-sm-12">
+              <p class="p-ubicacion">Santa Lucía, Canelones. URUGUAY</p>
+          </div>
+          <div class="logoalternativo col-lg-4 col-sm-12">
+              <img src="../multimedia/logos/riba-alternativo.svg" alt="logo riba alternativo">
+          </div>
+          <!-- iconos redes -->
+          <div class="col-lg-4 col-sm-12 redes">
+              <a href="https://wa.link/avj9ml" target="_blank"><img src="../multimedia/logos/whatsapp.svg" alt="icono whatsapp" width="35"></a>
+              <a href="https://www.instagram.com/riba_sportswear" target="_blank"><img class="mx-3" src="../multimedia/logos/instagram.svg" alt="icono instagram" width="35"></a>
+              <a href="mailto:sportswearriba@gmail.com"><img src="../multimedia/logos/mail.svg" alt="icono correo electronico" width="35"></a>
+          </div>
+      </div>
+  </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

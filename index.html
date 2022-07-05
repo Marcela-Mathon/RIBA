@@ -19,12 +19,12 @@
     <!-- menu principal -->
     
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+        <nav class="navbar navbar-expand-lg navbar-dark py-2 cabecera">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="index.html">
                     <img class="logoprincipal" src="multimedia/logos/logo-riba.svg" alt="logo riba sportswear" width="80">
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse menu" id="navbarNav">
@@ -56,27 +56,29 @@
         <a class="boton" href="pages/catalogo.html">Ver catálogo</a>
     </section>
 
-    <section class="section1">
+    <section class="section-cards">
         <h2>¿Qué ofrecemos?</h2>
-        <article class="contenedor-grid">
-            <div class="contenedor-grid-items" data-aos="zoom-out-right" data-aos-duration="2000">
-                <img src="multimedia/logos/icono-equipo.png" alt="icono equipo ciclista">
-                <h3>Ciclismo</h3>
-            </div>
-            <div class="contenedor-grid-items" data-aos="zoom-in-down" data-aos-duration="2000">
-                <img src="multimedia/logos/icono-camiseta.png" alt="icono camiseta futbol">
-                <h3>Fútbol</h3>
-            </div>
-            <div class="contenedor-grid-items" data-aos="zoom-out-left" data-aos-duration="2000">
-                <img src="multimedia/logos/icono-guantes.png" alt="icono guantes ciclismo">
-                <h3>Accesorios</h3>
-            </div> 
+        <article class="container">
+          <div class="row contenedor-cards">
+              <div class="col-lg-4 col-sm-12 contenedor-cards-items" data-aos="zoom-out-right" data-aos-duration="2000">
+                  <img src="multimedia/logos/icono-equipo.png" alt="icono equipo ciclista">
+                  <h3>Ciclismo</h3>
+              </div>
+              <div class="col-lg-4 col-sm-12 contenedor-cards-items" data-aos="zoom-in-down" data-aos-duration="2000">
+                  <img src="multimedia/logos/icono-camiseta.png" alt="icono camiseta futbol">
+                  <h3>Fútbol</h3>
+              </div>
+              <div class="col-lg-4 col-sm-12 contenedor-cards-items" data-aos="zoom-out-left" data-aos-duration="2000">
+                  <img src="multimedia/logos/icono-guantes.png" alt="icono guantes ciclismo">
+                  <h3>Accesorios</h3>
+              </div>
+          </div>
         </article>     
     </section>
     
-    <section class="section2">  
-        <h2>Vestidos por RIBA</h2>
-        <p>Algunos de los equipos que confían en nosotros para sus competiciones</p>
+    <section class="section-carousel">  
+        <h2>Equipos vestidos por RIBA</h2>
+        <p>Algunos de los equipos que confían en nosotros y nos eligen para vestirse en sus competiciones</p>
         <!-- Carousel -->
         <div id="carouselExampleInterval" class="carousel slide container mb-5" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -126,19 +128,19 @@
     </section>
     
     <!-- footer -->
-    <footer class="footer-grid pt-4 pb-4 ">
-        <div class="row">
-            <div class="col d-flex justify-content-start ms-5">
-                <p class="ubicacion mb-0 ">Santa Lucía, Canelones. URUGUAY</p>
+    <footer class="footer-container">
+        <div class="row footer-grid py-4 mx-0">
+            <div class="ubicacion col-lg-4 col-sm-12">
+                <p class="p-ubicacion">Santa Lucía, Canelones. URUGUAY</p>
             </div>
-            <div class="col">
-                <img class="logoalternativo" src="multimedia/logos/riba-alternativo.svg" alt="logo riba alternativo">
+            <div class="logoalternativo col-lg-4 col-sm-12">
+                <img src="multimedia/logos/riba-alternativo.svg" alt="logo riba alternativo">
             </div>
             <!-- iconos redes -->
-            <div class="col d-flex justify-content-end flex-wrap redes">
-                <a href="https://wa.link/avj9ml" target="_blank"><img class="mx-2" src="multimedia/logos/whatsapp.svg" alt="icono whatsapp" width="35"></a>
-                <a href="https://www.instagram.com/riba_sportswear" target="_blank"><img class="mx-2" src="multimedia/logos/instagram.svg" alt="icono instagram" width="35"></a>
-                <a href="mailto:sportswearriba@gmail.com"><img class="mx-2" src="multimedia/logos/mail.svg" alt="icono correo electronico" width="35"></a>
+            <div class="col-lg-4 col-sm-12 redes">
+                <a href="https://wa.link/avj9ml" target="_blank"><img src="multimedia/logos/whatsapp.svg" alt="icono whatsapp" width="35"></a>
+                <a href="https://www.instagram.com/riba_sportswear" target="_blank"><img class="mx-3" src="multimedia/logos/instagram.svg" alt="icono instagram" width="35"></a>
+                <a href="mailto:sportswearriba@gmail.com"><img src="multimedia/logos/mail.svg" alt="icono correo electronico" width="35"></a>
             </div>
         </div>
     </footer>
