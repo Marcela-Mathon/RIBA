@@ -1,0 +1,70 @@
+
+.footer-container{
+    background-color: black;
+}
+
+.footer-grid{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @media only screen and (max-width: 991px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    div{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.redes a img:hover{
+    transform: scale(1.13);
+    transition: 0.3s;
+} 
+
+.redes{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+
+    @media only screen and (max-width: 991px){
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+}
+
+.logoalternativo{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 98px;
+        @media only screen and (max-width: 991px){
+            width: 85px;
+            margin: 22px 0px 15px 0;
+        }
+    }
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
+
+    @media only screen and (max-width: 991px){
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+}
+
+.p-ubicacion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 0px;
+}

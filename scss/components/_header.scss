@@ -1,0 +1,47 @@
+
+.cabecera{
+    background-color: black;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+    width: 100%;
+
+    @media only screen and (max-width: 991px){
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 22px;
+        font-family:'Roboto', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        li{
+            list-style-type: none;
+            transition: 0.5s;
+            &:hover {
+                transform: scale(1.08);
+            }
+            a{
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                margin: 0 20px;
+                &:hover {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+}
+
+.logoprincipal:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
