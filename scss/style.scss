@@ -6,39 +6,12 @@
 @import 'base/variables';
 @import 'components/header';
 @import 'components/footer';
+@import 'components/inicio';
 
 
 *{
     margin: 0;
     padding: 0;
-}
-
-/* INICIO */
-.hero{
-    background-image: url(../multimedia/images/portada-ciclistas.jpg);
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-
-}
-
-.textoimagen{
-    width: 50%;
-    font-family: $font-textos;
-    font-weight: 400;
-    color: white;
-    font-size: 28px;
-    text-align: center;
-    margin: 22px 0;
-}
-
-@media only screen and (max-width: 991px){
-    .textoimagen{
-        width: 85%;
-    }
 }
 
 .boton{
@@ -50,62 +23,12 @@
     color: white;
     font-size: 23px;
     margin: 25px 0 120px 0;
-    transition: 0.3s
-}
+    transition: 0.3s;
 
-.boton:hover{
-    transform: scale(1.03);
-    color: black
-}
-
-.section-cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(219, 219, 219);
-    padding-bottom: 4%;
-}
-
-.section-cards h2, .section-carousel h2{
-    margin-bottom: 20px;
-    padding: 50px 0 25px;
-    color: black;
-    font-family: $font-titulos;
-    font-size: 35px;
-    text-align: center;
-}
-
-.contenedor-cards{
-    display: flex;
-    justify-content: center;
-}
-
-.contenedor-cards-items{
-    display: flex;
-    flex-direction: column;
-    background-color: #f9f9f9;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
-    margin: 2%;
-}
-
-.contenedor-cards-items img{
-    width: 65%;
-    padding-top: 30px;
-}
-
-.contenedor-cards-items h3{
-    display: flex;
-    align-items: flex-end;
-    margin: 30px 0;
-    font-family: $font-titulos;
-    font-size: 23px;
-    font-weight: 400
-}
-
-.section-carousel img{
-    object-fit: cover;
+    &:hover{
+        transform: scale(1.03);
+        color: black
+    }
 }
  
 .nosotros, .personalizados{
@@ -129,13 +52,12 @@
     margin: 40px 60px;
     font-family: $font-titulos;
     font-size: 40px;
-}
 
-@media only screen and (max-width: 991px){
-    .nosotros h1, .personalizados h1{
+    @media only screen and (max-width: 991px){
         margin: 0 0 20px 0;
     }
 }
+
 
 .nosotros p, .personalizados p{ 
     margin: 0px 60px;
@@ -145,14 +67,13 @@
     line-height: 35px;
     text-align: justify;
     width: 70%;
-}
-
-@media only screen and (max-width: 991px){
-    .nosotros p, .personalizados p{
+    
+    @media only screen and (max-width: 991px){
         margin:0 0 30px 0 ;
         width: 100%;
     }
 }
+
 /* CATALOGO */
 
 .catalogo h1, .contacto h1 {
@@ -173,27 +94,10 @@
     font-weight: 300;
     font-size: 22px;
     text-align: center;
-}
 
-@media only screen and (max-width: 991px){
-    .catalogo p, .contacto p, .section-carousel p{
+    @media only screen and (max-width: 991px){
         width: 75%;
     }
-}
-
-.grid-catalogo-items img{
-    width: 85%;
-    transition: 0.2s;
-}
-
-@media only screen and (max-width: 991px){
-    .grid-catalogo-items img{
-        width: 70%;
-    }
-}
-
-.grid-catalogo-items img:hover{
-    transform: scale(1.01);
 }
 
 .grid-catalogo-items{
@@ -202,32 +106,47 @@
     align-items: center;
     font-family: $font-textos;
     margin: 22px 0;
+
+    img{
+        width: 85%;
+        transition: 0.2s;
+    
+        @media only screen and (max-width: 991px){
+            width: 70%;
+        }
+    
+        &:hover{
+            transform: scale(1.01);
+        }
+    }
+
+    h3{
+        font-size: 20px;
+        margin: 12px 0 4px 0;
+    }
 }
 
-.grid-catalogo-items h3{
-    font-size: 20px;
-    margin: 12px 0 4px 0;
-}
 
 .botonvolverarriba{
     display: flex;
     justify-content: center;
     margin: 35px 0 35px 0;
-}
-.botonvolverarriba a{
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: white;
-    font-size: 20px;
-    transition: 0.2s;
-}
 
-.botonvolverarriba a:hover{
-    transform: scale(1.03);
-    color: $color-secundario
+    a{
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 20px;
+        transition: 0.2s;
+
+    &:hover{
+        transform: scale(1.03);
+        color: $color-secundario
+    }
+    }
 }
 
 /* CONTACTO */
@@ -235,25 +154,25 @@
 .datos-contacto{
     display: flex;
     flex-direction: column;
-    margin: 20px 0 35px 0
-}
+    margin: 20px 0 35px 0;
 
-.datos-contacto div{
-    display: flex;
-    align-items: center;
-}
+    div{
+        display: flex;
+        align-items: center;
+    }
 
-.datos-contacto p{
-    font-family: $font-textos;
-    font-weight: 300;
-    color: black;
-    font-size: 19px;
-    margin: 0px;
-}
+    p{
+        font-family: $font-textos;
+        font-weight: 300;
+        color: black;
+        font-size: 19px;
+        margin: 0px;
+    }
 
-.datos-contacto img{
-    width: 20px;
-    margin: 10px;
+    img{
+        width: 20px;
+        margin: 10px;
+    }
 }
 
 .boton-contacto{
@@ -265,10 +184,10 @@
     color: white;
     font-size: 15px;
     margin: 25px 0 40px 0;
-    transition: 0.3s
-}
+    transition: 0.3s;
 
-.boton-contacto:hover{
-    transform: scale(1.03);
-    color:#5dc1b9
+    &:hover{
+        transform: scale(1.03);
+        color: $color-secundario
+    }
 }
