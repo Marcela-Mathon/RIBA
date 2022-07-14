@@ -2,7 +2,19 @@
 /* tipografias */
 @import url("https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap");
 /* familia tipográfica: 'Roboto', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+/* familia tipográfica: 'Staatliches', cursive; */
 /* Imports archivos */
+.nosotros p, .personalizados p {
+  margin: 0px 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: justify;
+  width: 70%;
+}
+
 .cabecera {
   background-color: black;
 }
@@ -160,7 +172,7 @@
   margin-bottom: 20px;
   padding: 50px 0 25px;
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Staatliches", cursive;
   font-size: 35px;
   text-align: center;
 }
@@ -183,7 +195,7 @@
   display: flex;
   align-items: flex-end;
   margin: 30px 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Staatliches", cursive;
   font-size: 23px;
   font-weight: 400;
 }
@@ -196,12 +208,59 @@
   margin-bottom: 20px;
   padding: 50px 0 25px;
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Staatliches", cursive;
   font-size: 35px;
   text-align: center;
 }
 .section-carousel img {
   object-fit: cover;
+}
+
+.personalizados {
+  display: flex;
+  width: 100%;
+}
+.personalizados h1 {
+  margin: 40px 60px;
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .personalizados p {
+    margin: 0 0 30px 0;
+    width: 100%;
+  }
+}
+
+.imagenpersonalizados {
+  object-fit: cover;
+  width: 100%;
+}
+
+.nosotros {
+  display: flex;
+  width: 100%;
+}
+.nosotros h1 {
+  margin: 40px 60px;
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .nosotros h1 {
+    margin: 0 0 20px 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .nosotros p {
+    margin: 0 0 30px 0;
+    width: 100%;
+  }
+}
+
+.imagennosotros {
+  object-fit: cover;
+  width: 100%;
 }
 
 * {
@@ -222,12 +281,7 @@
 }
 .boton:hover {
   transform: scale(1.03);
-  color: black;
-}
-
-.nosotros, .personalizados {
-  display: flex;
-  width: 100%;
+  color: #5dc1b9;
 }
 
 @media only screen and (max-width: 991px) {
@@ -236,44 +290,12 @@
     flex-direction: column-reverse;
   }
 }
-.imagennosotros, .imagenpersonalizados {
-  object-fit: cover;
-  width: 100%;
-}
-
-.nosotros h1, .personalizados h1 {
-  margin: 40px 60px;
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-}
-@media only screen and (max-width: 991px) {
-  .nosotros h1, .personalizados h1 {
-    margin: 0 0 20px 0;
-  }
-}
-
-.nosotros p, .personalizados p {
-  margin: 0px 60px;
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 35px;
-  text-align: justify;
-  width: 70%;
-}
-@media only screen and (max-width: 991px) {
-  .nosotros p, .personalizados p {
-    margin: 0 0 30px 0;
-    width: 100%;
-  }
-}
-
 /* CATALOGO */
 .catalogo h1, .contacto h1 {
   margin: auto;
   padding: 35px 0 25px;
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Staatliches", cursive;
   font-size: 40px;
   text-align: center;
 }
@@ -325,7 +347,7 @@
 }
 .botonvolverarriba a {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   background-color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 300;

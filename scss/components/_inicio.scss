@@ -42,8 +42,7 @@
 }
 
 .contenedor-cards{
-    display: flex;
-    justify-content: center;
+    @include flex (flex, center);
 }
 
 .contenedor-cards-items{

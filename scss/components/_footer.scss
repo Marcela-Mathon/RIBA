@@ -4,8 +4,7 @@
 }
 
 .footer-grid{
-    display: flex;
-    justify-content: center;
+    @include flex (flex, center);
     width: 100%;
 
     @media only screen and (max-width: 991px){
@@ -26,20 +25,17 @@
 } 
 
 .redes{
-    display: flex;
-    justify-content: flex-end;
+    @include flex (flex, flex-end);
     padding-right: 40px;
 
     @media only screen and (max-width: 991px){
-        display: flex;
-        justify-content: center;
+        @include flex (flex, center);
         padding: 0px;
     }
 }
 
 .logoalternativo{
-    display: flex;
-    justify-content: center;
+    @include flex (flex, center);
     img{
         width: 98px;
         @media only screen and (max-width: 991px){
@@ -50,19 +46,17 @@
 }
 
 .ubicacion{
-    display: flex;
-    justify-content: flex-start;
+    @include flex (flex, flex-start);
     padding-left: 40px;
 
     @media only screen and (max-width: 991px){
-        display: flex;
-        justify-content: center;
+        @include flex (flex, center);
         padding: 0px;
     }
 }
 
 .p-ubicacion{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-textos;
     font-size: 18px;
     font-weight: 300;
     color: white;

@@ -2,12 +2,19 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap');
 /* familia tipográfica: 'Roboto', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* familia tipográfica: 'Staatliches', cursive; */
+
 /* Imports archivos */
 @import 'base/variables';
+@import 'base/extends';
+@import 'base/mixins';
+@import 'base/mapas';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/inicio';
-
+@import 'components/personalizados';
+@import 'components/nosotros';
 
 *{
     margin: 0;
@@ -16,61 +23,26 @@
 
 .boton{
     text-decoration: none;
-    padding: 12px 20px;
+    padding: map-get($botones, padding-boton);
     background-color: $bg-color-principal;
     font-family: $font-textos;
     font-weight: 300;
     color: white;
-    font-size: 23px;
+    font-size: map-get($botones, font-size-boton);
     margin: 25px 0 120px 0;
     transition: 0.3s;
 
     &:hover{
         transform: scale(1.03);
-        color: black
+        color: $color-secundario
     }
 }
  
-.nosotros, .personalizados{
-    display: flex;
-    width: 100%;
-}
 
 @media only screen and (max-width: 991px){
     .fila-personalizados, .fila-nosotros{
         display: flex;
         flex-direction: column-reverse;
-    }
-}
-
-.imagennosotros, .imagenpersonalizados{
-    object-fit: cover;
-    width: 100%;
-}
-
-.nosotros h1, .personalizados h1{
-    margin: 40px 60px;
-    font-family: $font-titulos;
-    font-size: 40px;
-
-    @media only screen and (max-width: 991px){
-        margin: 0 0 20px 0;
-    }
-}
-
-
-.nosotros p, .personalizados p{ 
-    margin: 0px 60px;
-    font-family: $font-textos;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 35px;
-    text-align: justify;
-    width: 70%;
-    
-    @media only screen and (max-width: 991px){
-        margin:0 0 30px 0 ;
-        width: 100%;
     }
 }
 
@@ -134,7 +106,7 @@
 
     a{
         text-decoration: none;
-        padding: 10px 20px;
+        padding: map-get($botones, padding-boton);
         background-color: black;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
