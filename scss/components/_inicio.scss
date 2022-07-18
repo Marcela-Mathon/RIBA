@@ -24,20 +24,32 @@
     }
 }
 
+.boton-inicio{
+    text-decoration: none;
+    padding: map-get($botones, padding-boton);
+    background-color: $bg-color-principal;
+    font-family: $font-textos;
+    font-weight: 300;
+    color: white;
+    font-size: map-get($botones, font-size-boton);
+    margin: 25px 0 120px 0;
+    transition: 0.3s;
+
+    &:hover{
+        transform: scale(1.03);
+        color: $color-secundario
+    }
+}
+
 .section-cards{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(240, 240, 240);
     padding-bottom: 4%;
 
     h2{
-        margin-bottom: 20px;
-        padding: 50px 0 25px;
-        color: black;
-        font-family: $font-titulos;
-        font-size: 35px;
-        text-align: center;
+        @extend %titulocentrado
     }
 }
 
@@ -70,13 +82,23 @@
 
 .section-carousel{
     h2{
-        margin-bottom: 20px;
-        padding: 50px 0 25px;
-        color: black;
-        font-family: $font-titulos;
-        font-size: 35px;
-        text-align: center;
+        @extend %titulocentrado
     }
+    p{
+        margin: auto;
+        width: 50%;
+        padding-bottom: 50px;
+        color: black;
+        font-family: $font-textos;
+        font-weight: 300;
+        font-size: 22px;
+        text-align: center;
+
+        @media only screen and (max-width: 991px){
+            width: 75%;
+        }
+    }
+
     img{
         object-fit: cover;
     }

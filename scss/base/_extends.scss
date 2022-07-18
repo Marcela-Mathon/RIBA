@@ -7,3 +7,23 @@
     text-align: justify;
     width: 70%;
 }
+
+%pcentrado{
+    margin: auto;
+    width: 50%;
+    padding-bottom: 50px;
+    color: black;
+    font-family: $font-textos;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+}
+
+%titulocentrado{
+    margin: auto;
+    padding: 35px 0 25px;
+    color: black;
+    font-family: $font-titulos;
+    font-size: 38px;
+    text-align: center;
+}

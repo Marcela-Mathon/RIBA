@@ -1,0 +1,68 @@
+.catalogo{
+    h1{
+        margin: auto;
+        padding: 35px 0 25px;
+        color: black;
+        font-family: $font-titulos;
+        font-size: 38px;
+        text-align: center;
+    }
+
+    p{
+        @extend %pcentrado;
+
+        @media only screen and (max-width: 991px){
+        width: 75%;
+        }
+    }
+
+}
+
+.productos-catalogo-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-textos;
+    margin: 22px 0;
+
+    img{
+        width: 85%;
+        transition: 0.2s;
+    
+        @media only screen and (max-width: 991px){
+            width: 70%;
+        }
+    
+        &:hover{
+            transform: scale(1.01);
+        }
+    }
+
+    h3{
+        font-size: 20px;
+        margin: 12px 0 4px 0;
+    }
+}
+
+
+.botonvolverarriba{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 35px 0;
+
+    a{
+        text-decoration: none;
+        padding: map-get($botones, padding-boton);
+        background-color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 20px;
+        transition: 0.2s;
+
+    &:hover{
+        transform: scale(1.03);
+        color: $color-secundario
+    }
+    }
+}

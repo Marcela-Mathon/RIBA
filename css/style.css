@@ -15,6 +15,26 @@
   width: 70%;
 }
 
+.contacto p, .catalogo p {
+  margin: auto;
+  width: 50%;
+  padding-bottom: 50px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+}
+
+.section-carousel h2, .section-cards h2 {
+  margin: auto;
+  padding: 35px 0 25px;
+  color: black;
+  font-family: "Staatliches", cursive;
+  font-size: 38px;
+  text-align: center;
+}
+
 .cabecera {
   background-color: black;
 }
@@ -54,7 +74,7 @@
   margin: 0 20px;
 }
 .menu ul li a:hover {
-  color: #5dc1b9;
+  color: #00FFC2;
 }
 
 .logoprincipal:hover {
@@ -161,22 +181,29 @@
   }
 }
 
+.boton-inicio {
+  text-decoration: none;
+  padding: 12px 20px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 23px;
+  margin: 25px 0 120px 0;
+  transition: 0.3s;
+}
+.boton-inicio:hover {
+  transform: scale(1.03);
+  color: #00FFC2;
+}
+
 .section-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(240, 240, 240);
   padding-bottom: 4%;
 }
-.section-cards h2 {
-  margin-bottom: 20px;
-  padding: 50px 0 25px;
-  color: black;
-  font-family: "Staatliches", cursive;
-  font-size: 35px;
-  text-align: center;
-}
-
 .contenedor-cards {
   display: flex;
   justify-content: center;
@@ -204,13 +231,20 @@
   padding-top: 30px;
 }
 
-.section-carousel h2 {
-  margin-bottom: 20px;
-  padding: 50px 0 25px;
+.section-carousel p {
+  margin: auto;
+  width: 50%;
+  padding-bottom: 50px;
   color: black;
-  font-family: "Staatliches", cursive;
-  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
   text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .section-carousel p {
+    width: 75%;
+  }
 }
 .section-carousel img {
   object-fit: cover;
@@ -223,7 +257,7 @@
 .personalizados h1 {
   margin: 40px 60px;
   font-family: "Staatliches", cursive;
-  font-size: 40px;
+  font-size: 38px;
 }
 @media only screen and (max-width: 991px) {
   .personalizados p {
@@ -237,6 +271,12 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 991px) {
+  .fila-personalizados {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .nosotros {
   display: flex;
   width: 100%;
@@ -244,7 +284,7 @@
 .nosotros h1 {
   margin: 40px 60px;
   font-family: "Staatliches", cursive;
-  font-size: 40px;
+  font-size: 38px;
 }
 @media only screen and (max-width: 991px) {
   .nosotros h1 {
@@ -263,79 +303,46 @@
   width: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.boton {
-  text-decoration: none;
-  padding: 12px 20px;
-  background-color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: white;
-  font-size: 23px;
-  margin: 25px 0 120px 0;
-  transition: 0.3s;
-}
-.boton:hover {
-  transform: scale(1.03);
-  color: #5dc1b9;
-}
-
 @media only screen and (max-width: 991px) {
-  .fila-personalizados, .fila-nosotros {
+  .fila-nosotros {
     display: flex;
     flex-direction: column-reverse;
   }
 }
-/* CATALOGO */
-.catalogo h1, .contacto h1 {
+.catalogo h1 {
   margin: auto;
   padding: 35px 0 25px;
   color: black;
   font-family: "Staatliches", cursive;
-  font-size: 40px;
-  text-align: center;
-}
-
-.catalogo p, .contacto p, .section-carousel p {
-  margin: auto;
-  width: 50%;
-  padding-bottom: 50px;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 22px;
+  font-size: 38px;
   text-align: center;
 }
 @media only screen and (max-width: 991px) {
-  .catalogo p, .contacto p, .section-carousel p {
+  .catalogo p {
     width: 75%;
   }
 }
 
-.grid-catalogo-items {
+.productos-catalogo-items {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
   margin: 22px 0;
 }
-.grid-catalogo-items img {
+.productos-catalogo-items img {
   width: 85%;
   transition: 0.2s;
 }
 @media only screen and (max-width: 991px) {
-  .grid-catalogo-items img {
+  .productos-catalogo-items img {
     width: 70%;
   }
 }
-.grid-catalogo-items img:hover {
+.productos-catalogo-items img:hover {
   transform: scale(1.01);
 }
-.grid-catalogo-items h3 {
+.productos-catalogo-items h3 {
   font-size: 20px;
   margin: 12px 0 4px 0;
 }
@@ -357,10 +364,23 @@
 }
 .botonvolverarriba a:hover {
   transform: scale(1.03);
-  color: #5dc1b9;
+  color: #00FFC2;
 }
 
-/* CONTACTO */
+.contacto h1 {
+  margin: auto;
+  padding: 35px 0 25px;
+  color: black;
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .contacto p {
+    width: 75%;
+  }
+}
+
 .datos-contacto {
   display: flex;
   flex-direction: column;
@@ -395,7 +415,12 @@
 }
 .boton-contacto:hover {
   transform: scale(1.03);
-  color: #5dc1b9;
+  color: #00FFC2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

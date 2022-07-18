@@ -1,0 +1,58 @@
+.contacto{
+    h1{
+        margin: auto;
+        padding: 35px 0 25px;
+        color: black;
+        font-family: $font-titulos;
+        font-size: 40px;
+        text-align: center;
+    }
+    p{
+        @extend %pcentrado;
+
+        @media only screen and (max-width: 991px){
+        width: 75%;
+        }
+    }
+}
+
+.datos-contacto{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 35px 0;
+
+    div{
+        display: flex;
+        align-items: center;
+    }
+
+    p{
+        font-family: $font-textos;
+        font-weight: 300;
+        color: black;
+        font-size: 19px;
+        margin: 0px;
+    }
+
+    img{
+        width: 20px;
+        margin: 10px;
+    }
+}
+
+.boton-contacto{
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: $bg-color-principal;
+    font-family: $font-textos;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+    margin: 25px 0 40px 0;
+    transition: 0.3s;
+
+    &:hover{
+        transform: scale(1.03);
+        color: $color-secundario
+    }
+}
