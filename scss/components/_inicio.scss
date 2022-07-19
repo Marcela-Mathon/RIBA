@@ -21,6 +21,7 @@
 
     @media only screen and (max-width: 991px){
         width: 85%;
+        font-size: 24px;
     }
 }
 
@@ -49,12 +50,17 @@
     padding-bottom: 4%;
 
     h2{
-        @extend %titulocentrado
+        @extend %titulocentrado;
+
+        @media only screen and (max-width: 991px){
+            font-size: 34px;
+        }
     }
 }
 
 .contenedor-cards{
-    @include flex (flex, center);
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor-cards-items{
@@ -82,20 +88,17 @@
 
 .section-carousel{
     h2{
-        @extend %titulocentrado
-    }
-    p{
-        margin: auto;
-        width: 50%;
-        padding-bottom: 50px;
-        color: black;
-        font-family: $font-textos;
-        font-weight: 300;
-        font-size: 22px;
-        text-align: center;
+        @extend %titulocentrado;
 
         @media only screen and (max-width: 991px){
-            width: 75%;
+            font-size: 34px;
+        }
+    }
+    p{
+        @extend %pcentrado;
+
+        @media only screen and (max-width: 991px){
+            width: 80%;
         }
     }
 
