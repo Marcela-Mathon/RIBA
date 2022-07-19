@@ -270,7 +270,7 @@
 @media only screen and (max-width: 991px) {
   .personalizados p {
     margin: 0 0 30px 0;
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -303,7 +303,7 @@
 @media only screen and (max-width: 991px) {
   .nosotros p {
     margin: 0 0 30px 0;
-    width: 85%;
+    width: 100%;
   }
 }
 
