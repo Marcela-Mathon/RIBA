@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.section-carousel h2, .section-cards h2 {
+.suscripcion h3, .section-carousel h2, .section-cards h2 {
   margin: auto;
   padding: 35px 0 25px;
   color: black;
@@ -171,7 +171,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: white;
-  font-size: 28px;
+  font-size: 33px;
   text-align: center;
   margin: 22px 0;
 }
@@ -252,6 +252,49 @@
   object-fit: cover;
 }
 
+.suscripcion {
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 30px;
+}
+.suscripcion p {
+  margin: auto;
+  width: 50%;
+  padding-bottom: 20px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+}
+.suscripcion form {
+  width: 50%;
+}
+@media only screen and (max-width: 991px) {
+  .suscripcion form {
+    width: 85%;
+  }
+}
+
+.boton-suscribirme {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.boton-suscribirme a {
+  text-decoration: none;
+  padding: 12px 20px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.boton-suscribirme a:hover {
+  transform: scale(1.03);
+  color: #00FFC2;
+}
+
 .personalizados {
   display: flex;
   width: 100%;
@@ -289,13 +332,13 @@
   display: flex;
   width: 100%;
 }
-.nosotros h1 {
+.nosotros h1, .nosotros h2 {
   margin: 40px 60px;
   font-family: "Staatliches", cursive;
   font-size: 38px;
 }
 @media only screen and (max-width: 991px) {
-  .nosotros h1 {
+  .nosotros h1, .nosotros h2 {
     margin: 0 0 20px 0;
     font-size: 35px;
   }
@@ -430,6 +473,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+.disclaimer {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

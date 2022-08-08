@@ -15,7 +15,7 @@
     font-family: $font-textos;
     font-weight: 400;
     color: white;
-    font-size: 28px;
+    font-size: 33px;
     text-align: center;
     margin: 22px 0;
 
@@ -104,5 +104,53 @@
 
     img{
         object-fit: cover;
+    }
+}
+
+.suscripcion{
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 30px;
+    h3{
+        @extend %titulocentrado;
+    }
+    p{
+        margin: auto;
+        width: 50%;
+        padding-bottom: 20px;
+        color: black;
+        font-family: $font-textos;
+        font-weight: 300;
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    form{
+        width: 50%;
+        
+    @media only screen and (max-width: 991px){
+        width: 85%;
+        }
+    }
+}
+
+.boton-suscribirme{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    a{
+        text-decoration: none;
+        padding: map-get($botones, padding-boton);
+        background-color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 20px;
+        transition: 0.2s;
+
+    &:hover{
+        transform: scale(1.03);
+        color: $color-secundario
+    }
     }
 }
