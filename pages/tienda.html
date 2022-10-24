@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Somos una empresa Uruguaya, que se dedica al diseño y confección de ropa deportiva. En RIBA encontrarás indumentaria principalmente para la práctica de ciclismo y fútbol.">
     <meta name="keywords" content="Ropa deportiva, ciclismo, futbol, deporte, calza, jersey, maillot">
-    <meta property="og:title" content="RIBA | Conocé nuestro catálogo">
-
+    <meta property="og:title" content="RIBA | Conocé nuestra tienda">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Favicon -->
     <link rel="shortcut icon" href="../multimedia/logos/riba-favicon.svg">
 
@@ -18,11 +18,11 @@
     <!-- AOS animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>RIBA | Catálogo </title>
+    <title>RIBA | TIENDA </title>
 </head>
 <body>
       <!-- menu principal -->
-      <header class="sticky-top">
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark py-2 cabecera">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="../index.html">
@@ -40,13 +40,13 @@
                     <a class="nav-link" href="nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="catalogo.html">Catálogo</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="personalizados.html">Personalizados</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">TIENDA</a>
                   </li>
                 </ul>
               </div>
@@ -56,67 +56,36 @@
 
      <main class="maincatalogo">
         <section class="catalogo">
-            <h1 id="volverarriba">Nuestros productos</h1>
+            <h1 id="volverarriba">Tienda</h1>
             <p>Cada prenda puede ser personalizada con color y diseño que desees.
             Fabricamos sobre pedido, con una demora aproximada de 20 días.
-            En caso de contar con stock, la entrega será inmediata.</p>
+            En caso de contar con stock, la entrega será inmediata.
+            </p>
+            <p>
+            Podrás ver tu carrito con los productos seleccionados al final de la página.
+            </p>
         </section>
-
-        <!-- fotos catalogo -->
         
-        <section class="container productos-catalogo">
-            <div class="row">
-                <div class="col-lg-4 col-sm-12 productos-catalogo-items">
-                    <img src="../multimedia/catalogo/maillot-azul.png" alt="maillot jersey ciclista azul">
-                    <h3>Maillot</h3>
-                    <p>$1790</p>
-                </div>
-                <div class="col-lg-4 col-sm-12 productos-catalogo-items">
-                    <img src="../multimedia/catalogo/maillot-gris.png" alt="maillot jersey ciclista gris y amarillo">
-                    <h3>Maillot</h3>
-                    <p>$1790</p>
-                </div>
-                <div class="col-lg-4 col-sm-12 productos-catalogo-items">
-                    <img src="../multimedia/catalogo/maillot-celeste.png" alt="maillot jersey ciclista celeste y rosado">
-                    <h3>Maillot</h3>
-                    <p>$1790</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-12 productos-catalogo-items">
-                    <img src="../multimedia/catalogo/chalecos.png" alt="chaleco cortaviento ciclismo">
-                    <h3>Chaleco cortaviento</h3>
-                    <p>$1990</p>
-                </div>
-                <div class="col-lg-4 col-sm-12 productos-catalogo-items">
-                    <img src="../multimedia/catalogo/calza-corta.png" alt="calza corta ciclismo">
-                    <h3>Calza corta</h3>
-                    <p>$2590</p>
-                </div>
-                <div class="col-lg-4 col-sm-12 productos-catalogo-items">
-                    <img src="../multimedia/catalogo/calzas-largas.png" alt="calza larga ciclismo">
-                    <h3>Calza larga</h3>
-                    <p>$2690</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-12 productos-catalogo-items">
-                    <img src="../multimedia/catalogo/camperafina.png" alt="campera neopreno ciclismo">
-                    <h3>Campera neopreno</h3>
-                    <p>$2390</p>
-                </div>
-                <div class="col-lg-4 col-sm-12 productos-catalogo-items">
-                    <img src="../multimedia/catalogo/neopreno-verde.png" alt="campera neopreno termica impermeable verde">
-                    <h3>Campera térmica impermeable</h3>
-                    <p>$2790</p>
-                </div>
-                <div class="col-lg-4 col-sm-12 productos-catalogo-items">           
-                    <img src="../multimedia/catalogo/nepreno-dama.png" alt="campera  neopreno termica impermeable rosada">
-                    <h3>Campera térmica impermeable</h3>
-                    <p>$2790</p>
-                </div>
-            </div>
-        </section>
+        <div class="row renderProductos">
+        </div>
+        
+        <div class="tablaCarrito">
+          <h1>Carrito</h1>
+        </div>
+        
+        <div class="subtotal" style="font-family: Staatliches, cursive; text-align:center; font-size:25px; margin: 2rem;">
+          Subtotal (0 items): $0
+        </div>
+        
+        <div class="container text-center" style="margin-bottom: 1rem">
+        <button class="btn btn-primary">
+        Finalizar compra
+        </button>
+        <button class="btn btn-secondary" id="botonVaciar">
+        Vaciar carrito
+        </button>
+        
+        </div>
         <section class="botonvolverarriba">
             <a href="#volverarriba">Volver arriba</a>
         </section>
@@ -144,9 +113,11 @@
     <script>
         AOS.init();
     </script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
     
 </body>
 </html>

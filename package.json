@@ -1,5 +1,5 @@
 {
-  "name": "riba-web",
+  "name": "proyecto-javascript",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marcela-Mathon/RIBA.git"
+    "url": "git+https://github.com/Marcela-Mathon/proyecto-javascript.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Marcela-Mathon/RIBA/issues"
+    "url": "https://github.com/Marcela-Mathon/proyecto-javascript/issues"
   },
-  "homepage": "https://github.com/Marcela-Mathon/RIBA#readme",
+  "homepage": "https://github.com/Marcela-Mathon/proyecto-javascript#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
